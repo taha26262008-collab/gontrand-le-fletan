@@ -98,13 +98,13 @@ public class Gontrand extends ObjetMobile {
     }
 
     // Faux si invincible (aucune vie perdue)
-    public boolean perdreVie() {
+    public void perdreVie() {
         if (estInvincible()) {
-            return false;
+            return ;
         }
         vies--;
         tempsInvincible = DUREE_INVINCIBILITE;
-        return true;
+
     }
 
     public boolean estInvincible() {
