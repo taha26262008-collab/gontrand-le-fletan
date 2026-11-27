@@ -37,9 +37,7 @@ public class MainJavaFx extends Application {
 
     private Stage fenetre;
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+
 
     @Override
     public void start(Stage fenetre) {
@@ -138,6 +136,7 @@ public class MainJavaFx extends Application {
 
     // Chaque appel crée une nouvelle partie. Escape (ou la fin de partie) retourne à l'accueil
     private Scene sceneJeu() {
+
         Pane racine = new Pane();
         Scene scene = new Scene(racine, Constantes.LARGEUR_FENETRE, Constantes.HAUTEUR_FENETRE);
         Canvas canvas = new Canvas(Constantes.LARGEUR_FENETRE, Constantes.HAUTEUR_FENETRE);
