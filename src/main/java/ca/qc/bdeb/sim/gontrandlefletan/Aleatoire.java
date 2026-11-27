@@ -10,12 +10,12 @@ public class Aleatoire {
 
     // max exclu
     public static double entre(double min, double max) {
-        return min + RANDOM.nextDouble() * (max - min);
+        return RANDOM.nextDouble(min,max);
     }
 
     // min et max inclus
     public static int entier(int min, int max) {
-        return min + RANDOM.nextInt(max - min + 1);
+         return RANDOM.nextInt(min,max+1);
     }
 
 

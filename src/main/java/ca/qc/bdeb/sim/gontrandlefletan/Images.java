@@ -8,7 +8,7 @@ import java.util.Map;
 
 // Chaque image n'est lue qu'une fois : sans cache, chaque poisson, décor ou projectile relirait le fichier
 public class Images {
-    private static final Map<String, Image> CACHE = new HashMap<>();
+    private static final HashMap<String, Image> CACHE = new HashMap<>();
 
     private Images() {}
 
